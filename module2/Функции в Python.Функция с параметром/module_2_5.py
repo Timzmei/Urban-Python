@@ -1,4 +1,4 @@
-def get_matrix(n, m, value):
+def get_matrix(n: int, m: int, value: int):
     matrix = []
     for i in range(n):
         new_row = []
