@@ -17,7 +17,7 @@
 - Проверьте, работает ли **print_params(*values_list_2, 42)**
 ### Пример результата выполнения программы:
 Исходный код:
-```
+```python
 values_list_2 = [54.32, 'Строка' ]
 print_params(*values_list_2, 42)
 Вывод на консоль:
@@ -32,7 +32,7 @@ print_params(*values_list_2, 42)
 `def a(my_list = []))` – это приводит к ошибкам!
 
 - Можно передавать вот так(список создаётся локально, мы не влияем на его изменение вне функции)
-``` 
+``` python
 def append_to_list(item, list_my=None):
   if list_my is None:
    list_my = []

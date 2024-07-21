@@ -14,7 +14,7 @@
 ```
 
 Пример написанного кода:
-```
+```python
 first_name = 'Vasya'
 apple_count = 10
 second_name = 'Petya'

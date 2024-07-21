@@ -18,7 +18,7 @@ get_multiplied_digits(40203) -> 4 * get_multiplied_digits(203) -> 4 * 2 * get_mu
 ```
 ### Пример результата выполнения программы:
 Исходный код:
-```
+```python
 result = get_multiplied_digits(40203)
 print(result)
 ```

@@ -13,7 +13,7 @@
 - Вызовите функцию **single_root_words** и выведете на экран(консоль) возвращённое ей значение.
 ### Пример результата выполнения программы:
 - Исходный код:
-```
+```python
 result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
 result2 = single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel')
 print(result1)
