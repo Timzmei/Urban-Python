@@ -2,7 +2,9 @@ class Horse():
     def __init__(self):
         self.x_distance = 0  # пройденный путь.
         self.sound = 'Frrr'  # звук, который издаёт лошадь.
-
+        super().__init__()
+        
+        
     # где dx - изменение дистанции, увеличивает x_distance на dx.
     def run(self, dx):
         self.x_distance += dx
@@ -10,6 +12,7 @@ class Horse():
 
 class Eagle():
     def __init__(self):
+        
         self.y_distance = 0  # высота полёта
         # звук, который издаёт орёл(отсылка)
         self.sound = 'I train, eat, sleep, and repeat'
@@ -23,8 +26,8 @@ class Pegasus(Horse, Eagle):
 
     def __init__(self):
         super().__init__()
-        Horse.__init__(self)
-        Eagle.__init__(self)
+        
+
 
     # где dx и dy изменения дистанции. В этом методе должны запускаться наследованные методы run и fly соответственно.
     def move(self, dx, dy):
