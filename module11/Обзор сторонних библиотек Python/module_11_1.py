@@ -25,7 +25,6 @@ def main():
 
 
 
-    # Библиотека pandas. Получение данных из файла billboard_charts.csv
     data = pd.read_csv(csv_file_path)
 
     print("Первые 3 строки данных:")
