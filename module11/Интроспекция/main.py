@@ -6,6 +6,7 @@ def introspection_info(obj):
     attributes = dir(obj)
 
     methods = [attr for attr in attributes if callable(getattr(obj, attr))]
+    non_method_attributes = [attr for attr in attributes if not callable(getattr(obj, attr))]
 
     module = inspect.getmodule(obj)
     if module is None:
@@ -21,7 +22,7 @@ def introspection_info(obj):
 
     info = {
         'type': obj_type,
-        'attributes': attributes,
+        'attributes': non_method_attributes,
         'methods': methods,
         'module': module_name,
         'properties': other_properties
