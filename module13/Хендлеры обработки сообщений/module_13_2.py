@@ -5,10 +5,8 @@ import os
 
 from dotenv import load_dotenv
 
-# Загрузить переменные окружения из .env файла
 load_dotenv()
 
-# Получить значение переменных окружения
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 bot = Bot(BOT_TOKEN)
