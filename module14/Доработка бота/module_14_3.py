@@ -1,4 +1,4 @@
-from aiogram import Bot, Dispatcher, types 
+from aiogram import Bot, Dispatcher, types
 from aiogram import F
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
